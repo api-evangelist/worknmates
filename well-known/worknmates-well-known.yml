@@ -1,0 +1,67 @@
+generated: '2026-07-21'
+method: searched
+source: live HTTP probes of getoffi.com / worknmates.com hosts
+note: >-
+  No real well-known documents are published. www.getoffi.com and
+  www.worknmates.com are a single-page app whose catch-all route returns the
+  HTML shell (content-type text/html) with HTTP 200 for any path, so the 200s
+  below are SPA fallbacks, not documents. The apex getoffi.com returns true
+  404s. Backend API hosts (worknmates-api-*-prod.herokuapp.com) return 404 for
+  every well-known path.
+hosts:
+- host: https://www.getoffi.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    real_document: false
+    detail: SPA HTML fallback (text/html)
+  - path: /.well-known/openid-configuration
+    status: 200
+    real_document: false
+    detail: SPA HTML fallback (text/html)
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    real_document: false
+    detail: SPA HTML fallback (text/html)
+  - path: /.well-known/api-catalog
+    status: 200
+    real_document: false
+    detail: SPA HTML fallback (text/html)
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    real_document: false
+    detail: SPA HTML fallback (text/html)
+  - path: /llms.txt
+    status: 200
+    real_document: false
+    detail: SPA HTML fallback (text/html)
+  - path: /robots.txt
+    status: 200
+    real_document: true
+    detail: permissive robots.txt (User-agent * / Disallow empty)
+- host: https://getoffi.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /llms.txt
+    status: 404
+- host: https://worknmates-api-principal-prod.herokuapp.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404

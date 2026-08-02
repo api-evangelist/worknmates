@@ -1,8 +1,24 @@
 aid: worknmates
 name: Worknmates
-description: Worknmates is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Worknmates, now operating as OFFI (getoffi.com), is a Latin American
+  flexible-workspace marketplace. Companies give employees budgets to book coworking
+  spaces, offices, and work-ready apartments near where they live, with real-time
+  transaction tracking, per-city budgets, and approved-space networks; hosts list
+  and monetize their spaces, with payouts through dLocal and PayPal. A 500 Global
+  portfolio company. No public developer program or documented API is published.
 url: https://raw.githubusercontent.com/api-evangelist/worknmates/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://www.getoffi.com/apple-touch-icon.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -11,9 +27,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Coworking
+- Flexible Workspace
+- Hybrid Work
+- Marketplace
+- Workplace
+- Latin America
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,4 +44,31 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://getoffi.com
+  url: https://www.getoffi.com
+- type: Pricing
+  url: https://www.getoffi.com/pricing
+- type: Support
+  url: https://www.getoffi.com/faq-landing
+- type: Login
+  url: https://www.getoffi.com/login
+- type: TermsOfService
+  url: https://www.getoffi.com/terms
+- type: PrivacyPolicy
+  url: https://www.getoffi.com/privacy
+- type: Twitter
+  url: https://twitter.com/worknmates
+- type: LinkedIn
+  url: https://www.linkedin.com/company/worknmates/
+- type: Facebook
+  url: https://www.facebook.com/Worknmates
+- type: Instagram
+  url: https://www.instagram.com/get.offi/
+- type: DomainSecurity
+  url: security/worknmates-domain-security.yml
+- type: LLMsTxt
+  url: llms/worknmates-llms.txt
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
