@@ -7,6 +7,17 @@ description: Worknmates, now operating as OFFI (getoffi.com), is a Latin America
   and monetize their spaces, with payouts through dLocal and PayPal. A 500 Global
   portfolio company. No public developer program or documented API is published.
 url: https://raw.githubusercontent.com/api-evangelist/worknmates/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
